@@ -1,0 +1,25 @@
+/* styles.css */
+body {
+    margin: 250px;
+    padding: 0px;
+    background-image: url('images/');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #1d6105; /* Title color */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+main {
+    text-align: center;
+    margin-top: 300px;
+}
+
+/* Score text color */
+p {
+    color: #000000;
+}

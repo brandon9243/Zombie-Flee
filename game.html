@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <h1>Zombie Flee</h1>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Connection to our css file -->
+        <link rel="stylesheet" href="styles/style.css" />
+        <!-- Game title -->
+        <title>Zombie Flee</title>
+        <style>
+            #startScreen {
+                text-align: center;
+                margin-top: 20%;
+            }
+
+            #startButton {
+                padding: 10px 20px;
+                font-size: 24px;
+            }
+        </style>
     </head>
     <body>
-        <script src="styles/style.css"></script>
+        <div id="startScreen">
+            <!-- The start screen for the game -->
+            <h1>Flee from the zombies</h1>
+            <!-- Start Button -->
+            <button id="startButton">Start Survival</button>
+        </div>
+        <!-- Title display -->
+        <div id="gameScreen" style="display: none">
+            <h1>Zombie Flee</h1>
+
+            <main>
+                <!-- score -->
+                <p>Zombies Killed: <span id="score">0</span></p>
+            </main>
+        </div>
+        <!-- Connecting the html to the javascript files -->
         <script src="src/main.js"></script>
+        <script src="src/building.js"></script>
+        <!-- The function to enable the start screen -->
+        <script>
+            document
+                .getElementById('startButton')
+                .addEventListener('click', function () {
+                    document.getElementById('startScreen').style.display =
+                        'none';
+                    document.getElementById('gameScreen').style.display =
+                        'block';
+                });
+        </script>
     </body>
 </html>
