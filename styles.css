@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: url('Title.png') no-repeat center center;
+    background-size: cover;
+}
+
+#start-screen,
+#game-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-screen {
+    background: url('gameScreen.png') no-repeat center center;
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
+}
+
+.player,
+.bullet,
+.zombie {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+
+.player {
+    background-image: url('player.png');
+}
+
+.bullet {
+    background-image: url('bullet.png');
+}
+
+.zombie {
+    background-image: url('zombie.png');
+}
+
+#hearts {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.heart {
+    width: 30px;
+    height: 30px;
+    background: url('hearts.png') no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+}
+
+#end-screen {
+    background: url('endGame.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
